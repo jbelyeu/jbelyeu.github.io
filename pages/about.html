@@ -34,6 +34,13 @@
         <script type="text/javascript">
           var imageLocation = "/images/"
           var images = ["mission1.jpg", "mission2.jpg", "mission3.jpg"];
+
+          var imageLocation = "/images/mission/thumbs/";
+          var images = [
+            "mission1_tn.jpg",
+            "mission2_tn.jpg",
+            "mission3_tn.jpg",
+           ];
           var captions = ["Cartagena, Colombia", "Barranquilla, Colombia", "A sloth I met in Cartagena"];
           
           for (var i = 0; i < images.length; ++i) {
@@ -60,18 +67,24 @@
         
         <div class="ending-pastimes"></div>        
         <script type="text/javascript">
-          var imageLocation = "/images/thumbs/";
+          var imageLocation = "/images/hiking/thumbs/";
+          var images = [
+            "canyon2_tn.jpg",
+            "canyon3_tn.jpg",
+            "timphike3_tn.jpg",
+            "timphike4_tn.jpg",
+            "timphike5_tn.jpg",
+            "timpwalk3_tn.jpg",
+            "hiking2_tn.jpg",
+            "hiking1_tn.jpg"
+          ];
 
-          var images = ["timphike1.jpg", "timphike2.jpg", "timphike3.jpg", "timphike4.jpg", "timphike5.jpg", "timpwalk.jpg", "timpwalk2.jpg", "timpwalk3.jpg", "timpwalk4.jpg", "canyons4.jpg"];
-
-
-          var images = ["timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg", "timpwalk4_thumb.jpg"];
-          var captions = ["View from Timpanogos Peak", "", "", "", "", "", "", "", "", ""];
+          var captions = ["", "", "", "", "", "", "View from Timpanogos Peak", "", "", "","","","","",""];
           
           for (var i = 0; i < images.length; ++i) {
             var imageRef = imageLocation + images[i];
             var id = 'pastime' + i;
-            $(".ending-pastimes").append('<img id="' + id + '" class="thumbnail" src="' + imageRef +'" alt="' + captions[i] + '" width="100">');
+            $(".ending-pastimes").append('<img id="' + id + '" class="thumbnail" src="' + imageRef +'" alt="' + captions[i] + '" >');
             $(".ending-pastimes").append('<div id="'+ id + 'Modal" class="modal">');
             $("#" + id + "Modal").append('<span class="close" id="'+ id + 'Close">×</span>');
             $("#" + id + "Modal").append('<img class="modal-content" id="'+ id + 'Img">');
@@ -81,7 +94,7 @@
         </script>        
         <a href="/index.html">Back to home</a>
       </section>
-    </div>    
+    </div>
   </body>
 </html>
 
@@ -92,8 +105,11 @@
     var modalImg = document.getElementById(img.id + "Img");
     var captionText = document.getElementById(img.id +"Capt");
 
+
+    var source = this.src.replace("thumbs/", "");
+    source = source.replace("_tn", "");
     modal.style.display = "block";
-    modalImg.src = this.src;
+    modalImg.src = source;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
   });
