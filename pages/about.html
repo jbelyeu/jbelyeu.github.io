@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Jon Belyeu by jbelyeu</title>
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/github-dark.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/github-dark.css">
     <link rel="icon" href="/images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
+
+
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
@@ -16,13 +21,42 @@
       
     <div class="wrapper">
 
-      <section>
+      <section id='page'>
         <div id="title">
           <h1>Jon Belyeu</h1>
           <p>About Me</p>
           <hr>
         </div>
+
         <h3>Site under development</h3>
+
+        <h4>Home</h4>
+        <p>I'm from outside of a small town named Kellyton in central Alabama, although I generally claim the slightly less small town of Alexander City (even though it's just as unknown). I moved to Provo, Utah when I was 18 to start school and haven't spent much time in 'Bama since.</p>
+
+        <h4>Mission</h4>
+        <p>I served as a volunteer missionary for The Church of Jesus Christ of Latter-day Saints from December of 2010 to December of 2012. I spent two years in the beautiful country of Colombia, learned Spanish, and still never got a tan.</p>
+
+        <img id="myImg" class="thumbnail" src="/images/mission1.jpg" alt="Cartagena, Colombia" width="100">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
+        
+
+
+        <h4>Undergraduate Education</h4>
+        <p></p>
+
+        <h4>Graduate Education</h4>
+        <p></p>
+
+        <h4>Pastimes</h4>
+        <p></p>
+
         <a href="/index.html">Back to home</a>
        
       </section>
@@ -30,3 +64,27 @@
     </div>    
   </body>
 </html>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+</script>
