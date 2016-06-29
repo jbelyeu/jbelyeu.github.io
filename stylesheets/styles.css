@@ -870,29 +870,29 @@ section #title .credits.right {
 }
 
 .home-page {
-    background-image: url("../images/canyon2.jpg");
+    background-image: url("/images/canyon2.jpg");
     
 
 }
 
 .about-page {
-   background-image: url("../images/bg4.jpg");
+   background-image: url("/images/bg4.jpg");
     
 }
 
 .compute-page {
-    background-image: url("../images/bg6.jpg");
+    background-image: url("/images/bg6.jpg");
     
 }
 
 .research-page {
-    /*background-image: url("../images/bg7.jpg");
-    background-image: url("../images/timphike2.jpg");
-    background-image: url("../images/timphike5.jpg");*/
-    background-image: url("../images/timphike4.jpg");
+    /*background-image: url("/images/bg7.jpg");
+    background-image: url("/images/timphike2.jpg");
+    background-image: url("/images/timphike5.jpg");*/
+    background-image: url("/images/timphike4.jpg");
 
 }
 
 .academic-page {
-    background-image: url("../images/bg1.jpg");
+    background-image: url("/images/bg1.jpg");
 }
