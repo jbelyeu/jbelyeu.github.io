@@ -3,88 +3,119 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jon Belyeu by jbelyeu</title>
+    <title>Jon Belyeu</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/github-dark.css">
     <link rel="icon" href="/images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
-
-
-
-
-
+    <script src="/javascripts/imagemanip.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
   <body class="body-background about-page">
       
     <div class="wrapper">
-
       <section id='page'>
         <div id="title">
-          <h1>Jon Belyeu</h1>
-          <p>About Me</p>
+          <h1><a href="/index.html">Jon Belyeu</a></h1>
+          <h2 class="subheading">About Me</h2>
           <hr>
-        </div>
-
-        <h3>Site under development</h3>
-
-        <h4>Home</h4>
-        <p>I'm from outside of a small town named Kellyton in central Alabama, although I generally claim the slightly less small town of Alexander City (even though it's just as unknown). I moved to Provo, Utah when I was 18 to start school and haven't spent much time in 'Bama since.</p>
-
-        <h4>Mission</h4>
-        <p>I served as a volunteer missionary for The Church of Jesus Christ of Latter-day Saints from December of 2010 to December of 2012. I spent two years in the beautiful country of Colombia, learned Spanish, and still never got a tan.</p>
-
-        <img id="myImg" class="thumbnail" src="/images/mission1.jpg" alt="Cartagena, Colombia" width="100">
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <span class="close">×</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
         </div>
 
         
 
+        <h3>Home</h3>
+        <p>I'm from outside of a small town named Kellyton in central Alabama, although I generally claim the slightly less small town of Alexander City (even though it's just as unknown). I moved to Provo, Utah when I was 18 to start school and haven't spent much time in 'Bama since.</p>
 
-        <h4>Undergraduate Education</h4>
-        <p></p>
+        <h3>Mission</h3>
+        <p>I served as a volunteer missionary for The Church of Jesus Christ of Latter-day Saints from December of 2010 to December of 2012. I spent two years in the beautiful country of Colombia, learned Spanish, and still never got a tan.</p>
 
-        <h4>Graduate Education</h4>
-        <p></p>
+        <div class="ending-mission"></div>        
+        <script type="text/javascript">
+          var imageLocation = "/images/"
+          var images = ["mission1.jpg", "mission2.jpg", "mission3.jpg"];
+          var captions = ["Cartagena, Colombia", "Barranquilla, Colombia", "A sloth I met in Cartagena"];
+          
+          for (var i = 0; i < images.length; ++i) {
+            var imageRef = imageLocation + images[i];
 
-        <h4>Pastimes</h4>
-        <p></p>
+            var id = 'mission' + i;
+            $(".ending-mission").append('<img id="' + id + '" class="thumbnail" src="' + imageRef +'" alt="' + captions[i] + '" width="100">');
+            $(".ending-mission").append('<div id="'+ id + 'Modal" class="modal">');
+            $("#" + id + "Modal").append('<span class="close" id="'+ id + 'Close">×</span>');
+            $("#" + id + "Modal").append('<img class="modal-content" id="'+ id + 'Img">');
+            $("#" + id + "Modal").append('<div class="caption" id="'+ id + 'Capt"></div>');
+            $(".ending-mission").append('</div>');
+          }
+        </script>
 
+        <h3>Undergraduate Education</h3>
+        <p>From late 2009 to early 2016 (with a break for the mission) I studied at Brigham Young University in the emerging field of Bioinformatics. I graduated with a BS in Bioinformatics (minor in Computer Science) in April 2016.</p>
+
+        <h3>Graduate Education</h3>
+        <p>I'm starting my graduate studies in Molecular Biology in August of 2016. I'm mostly interested in computational biology/bioinformatics and intend to funnel that into human genetics or possible oncological studies.</p>
+
+        <h3>Pastimes</h3>
+        <p>I'm a huge fan of the outdoors and really enjoy the hiking, backpacking, and camping opportunities Utah offers. All of the background pictures on this site are from various hikes I took in Utah. Here are a few more I liked:</p>
+        
+        <div class="ending-pastimes"></div>        
+        <script type="text/javascript">
+          var imageLocation = "/images/"
+          var images = ["timphike1.jpg", "timphike2.jpg", "timphike3.jpg", "timphike4.jpg", "timphike5.jpg", "timpwalk.jpg", "timpwalk2.jpg", "timpwalk3.jpg", "timpwalk4.jpg", "canyons4.jpg"];
+          var captions = ["View from Timpanogos Peak", "", "", "", "", "", "", "", "", ""];
+          
+          for (var i = 0; i < images.length; ++i) {
+            var imageRef = imageLocation + images[i];
+            var id = 'pastime' + i;
+            $(".ending-pastimes").append('<img id="' + id + '" class="thumbnail" src="' + imageRef +'" alt="' + captions[i] + '" width="100">');
+            $(".ending-pastimes").append('<div id="'+ id + 'Modal" class="modal">');
+            $("#" + id + "Modal").append('<span class="close" id="'+ id + 'Close">×</span>');
+            $("#" + id + "Modal").append('<img class="modal-content" id="'+ id + 'Img">');
+            $("#" + id + "Modal").append('<div class="caption" id="'+ id + 'Capt"></div>');
+            $(".ending-pastimes").append('</div>');
+          }
+        </script>        
         <a href="/index.html">Back to home</a>
-       
       </section>
-
     </div>    
   </body>
 </html>
 
 <script>
-  // Get the modal
-  var modal = document.getElementById('myModal');
+  $(".thumbnail").click(function(event){
+    var img = event.toElement;
+    var modal = document.getElementById(img.id + "Modal");
+    var modalImg = document.getElementById(img.id + "Img");
+    var captionText = document.getElementById(img.id +"Capt");
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById('myImg');
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      modalImg.alt = this.alt;
-      captionText.innerHTML = this.alt;
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  });
+
+  var closeFun = function(event) {
+    var span = event.toElement;
+    var spanID = span.id;
+    var modalID = spanID.substring(0, spanID.length - 5) + "Modal";
+    var modal = document.getElementById(modalID);
+    modal.style.display = "none";
+  };
+
+  var spans = document.getElementsByClassName("close");
+  for (var i = 0; i < spans.length; ++i) {
+    spans[i].onclick = closeFun;
   }
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
+  $(document).keyup(function(event) {
+       if (event.keyCode == 27) {
+          var modals = document.getElementsByClassName("modal");
+          for (var i = 0; i < modals.length; ++i) {
+            if (modals[i].style.display == 'block') {
+              modals[i].style.display = "none";
+            }
+          }
+      }
+  });
 </script>
