@@ -984,23 +984,26 @@ section #title .credits.right {
     }
 }
 
-.row
-{
-    display: table;
-    width: 100%; 
-    table-layout: fixed; 
-    border-spacing: 10px;
-}
-.column
-{
-    display: table-cell;
-}
 
-.column ul {
-  list-style-image: none;
-}
+@media only screen and (min-width: 700px){
+    .row
+    {
+        display: table;
+        width: 100%; 
+        table-layout: fixed; 
+        border-spacing: 10px;
+    }
+    .column
+    {
+        display: table-cell;
+    }
 
+    .column ul {
+      list-style-image: none;
+    }
+}
 .column h4 {
   color : #ffcc00;
+  font-size:large;
 }
 
