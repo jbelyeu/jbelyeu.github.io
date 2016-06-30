@@ -130,8 +130,9 @@
 
     var source = this.src.replace("thumbs/", "");
     source = source.replace("_tn", "");
-    var mediaQuery = window.matchMedia( "(min-width: 700px)" ).matches;
-    if (! window.matchMedia( "(min-width: 700px)" ).matches) {
+    
+    //if window is not at least 800px
+    if (! window.matchMedia( "(min-width: 800px)" ).matches) {
       console.log(source);
       source = source.replace("hiking", "hiking/mobile");
 
