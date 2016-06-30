@@ -873,7 +873,6 @@ section #title .credits.right {
 }
 
 .home-page {
-    /*background-image: url("/images/backgrounds/bg5.jpg");*/
     background-image: url("/images/backgrounds/bg5.jpg");   
 }
 
@@ -894,6 +893,31 @@ section #title .credits.right {
 
 .academic-page {
     background-image: url("/images/backgrounds/bg3.jpg");
+}
+
+@media only screen and (max-width: 700px){
+    .home-page {
+        background-image: url("/images/backgrounds/mobile/bg5.jpg");   
+    }
+
+    .about-page {
+       background-image: url("/images/backgrounds/mobile/bg4.jpg");
+        
+    }
+
+    .compute-page {
+        background-image: url("/images/backgrounds/mobile/bg7.jpg");
+        
+    }
+
+    .research-page {
+        background-image: url("/images/backgrounds/mobile/bg9.jpg");
+
+    }
+
+    .academic-page {
+        background-image: url("/images/backgrounds/mobile/bg3.jpg");
+    }
 }
 
 
