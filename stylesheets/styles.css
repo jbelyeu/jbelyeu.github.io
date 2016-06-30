@@ -889,10 +889,7 @@ section #title .credits.right {
 }
 
 .research-page {
-    /*background-image: url("/images/bg7.jpg");
-    background-image: url("/images/timphike2.jpg");
-    background-image: url("/images/timphike5.jpg");*/
-    background-image: url("/images/backgrounds/bg8.jpg");
+    background-image: url("/images/backgrounds/bg9.jpg");
 
 }
 
@@ -987,3 +984,24 @@ section #title .credits.right {
         width: 100%;
     }
 }
+
+.row
+{
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+.column
+{
+    display: table-cell;
+}
+
+.column ul {
+  list-style-image: none;
+}
+
+.column h4 {
+  color : #ffcc00;
+}
+
