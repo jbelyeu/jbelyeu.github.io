@@ -873,9 +873,8 @@ section #title .credits.right {
 }
 
 .home-page {
-    background-image: url("/images/backgrounds/bg5.jpg");
-    
-
+    /*background-image: url("/images/backgrounds/bg5.jpg");*/
+    background-image: url("/images/backgrounds/bg5.jpg");   
 }
 
 .about-page {
