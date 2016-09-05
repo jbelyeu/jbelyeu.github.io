@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body class="body-background about-page">
-      
+
     <div class="wrapper">
       <section id='page'>
         <div id="title">
@@ -28,7 +28,7 @@
         <h3>Mission</h3>
         <p>I served as a volunteer missionary for The Church of Jesus Christ of Latter-day Saints from December of 2010 to December of 2012. I spent two years in the beautiful country of Colombia, learned Spanish, and still never got a tan.</p>
 
-        <div class="ending-mission"></div>        
+        <div class="academic-pics"></div>
         <script type="text/javascript">
           var imageLocation = "/images/"
           var images = ["mission1.jpg", "mission2.jpg", "mission3.jpg"];
@@ -40,7 +40,7 @@
             "mission3_tn.jpg",
            ];
           var captions = ["Cartagena, Colombia", "Barranquilla, Colombia", "A sloth I met in Cartagena"];
-          
+
           for (var i = 0; i < images.length; ++i) {
             var imageRef = imageLocation + images[i];
 
@@ -62,8 +62,8 @@
 
         <h3>Pastimes</h3>
         <p>I'm a huge fan of the outdoors and really enjoy the hiking, backpacking, and camping opportunities Utah offers. All of the background pictures on this site are from various hikes I took in Utah. Here are a few randomly selected images I liked. Refresh to see different ones.</p>
-        
-        <div class="ending-pastimes"></div>        
+
+        <div class="ending-pastimes"></div>
         <script type="text/javascript">
           var imageLocation = "/images/hiking/thumbs/";
           var images = [
@@ -100,7 +100,7 @@
             captions.splice(random,1);
             length--;
           }
-          
+
           for (var i = 0; i < images.length; ++i) {
             var imageRef = imageLocation + images[i];
             var id = 'pastime' + i;
@@ -130,7 +130,7 @@
 
     var source = this.src.replace("thumbs/", "");
     source = source.replace("_tn", "");
-    
+
     //if window is not at least 800px
     if (! window.matchMedia( "(min-width: 800px)" ).matches) {
       console.log(source);

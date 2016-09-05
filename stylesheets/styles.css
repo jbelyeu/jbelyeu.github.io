@@ -921,6 +921,20 @@ section #title .credits.right {
     }
 }
 
+@media only screen and (max-width: 600px){
+  .academic-pics {
+      left:5% !important;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .ending-mission {
+    left:0% !important;
+  }
+  .academic-pics {
+      left:0% !important;
+  }
+}
 
 .thumbnail {
     border-radius: 5px;
@@ -1030,4 +1044,22 @@ section #title .credits.right {
 .column h4 {
   color : #ffcc00;
   font-size:large;
+}
+.ending-mission {
+  position: relative;
+  left: 25%;
+}
+.academic-pics {
+  position: relative;
+  left: 20%;
+}
+.llnlcaption {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+.cvcaption {
+  color: white;
+  font-size: 10px;
+  text-align: center;
 }
