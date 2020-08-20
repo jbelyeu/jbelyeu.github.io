@@ -1,57 +1,164 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Jon Belyeu</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <link rel="icon" href="images/favicon.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="./stylesheets/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/respond.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+          $('#ios-notice').removeClass('hidden');
+          $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+        } else {
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        }
+      });
+    </script>
+    <script src="./js/parallax.min.js"></script>
   </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Jon Belyeu <small>Bioinformatician</small></h1>
+        <a href="https://github.com/jbelyeu" class="btn btn-default btn-sm">GitHub @jbelyeu</a >
+        <a href="https://twitter.com/intent/tweet?screen_name=jon_belyeu&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @jon_belyeu</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
 
-  <body class="body-background home-page">
-    <div class="wrapper">
-      <section>
-        <div id="title">
-          <h1><a href="/index.html">Jon Belyeu</a></h1>
-          <h3 class="subheading">Personal website</h3>
-          <img class="header-img" src="images/me.jpg"/>
-          <hr>
-        </div>
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/backgrounds/dna.jpg"></div>
 
-        <h3>This site is under development</h3>
-        <h3>Welcome to jonbelyeu.com</h3>
+    <section id="about-me"> 
+      <div class="container">
+            <div style="width: 100%; overflow: hidden;">
+                <div style="width: 60%; float: left;">
+                    <h3>About me</h3>
+                    <p>I'm a graduate student pursuing a PhD in the Molecular Biology Bioscience program at the University of Utah. I work on a variety of problems, mostly relating to genomic structural variation. </p>
+                </div>
+                <div style="margin-left: 62%;">
+                    <img src="images/belyeu2.jpg" style="width:50%">
+                </div>
+            </div>
+        <!-- Highlights of research and accomplishments-->
 
-        
+      </div>
+    </section>
 
-        <p>I'm a graduate student pursuing a PhD in the Molecular Biology Bioscience program at the University of Utah. I'm especially interested in computational human genetics. </p>
-        <p>This site is intended to showcase a few of my interests and to give me a chance to stretch my web design/development skills.</p>
 
-        <ul>
-          <li>
-            <a href="pages/about.html"> About me </a>
-          </li>
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/backgrounds/dna.jpg"></div>
 
-          <li>
-            <a href="pages/research.html"> My research </a>
-          </li>
+    <section id="research-details"> 
+      <div class="container">
+            <div style="width: 100%; overflow: hidden;">
+                <div style="width: 60%; float: left;">
+                    <h3>About me</h3>
+                    <p>I'm a graduate student pursuing a PhD in the Molecular Biology Bioscience program at the University of Utah. I work on a variety of problems, mostly relating to genomic structural variation. </p>
+                </div>
+                <div style="margin-left: 62%;">
+                    <img src="images/belyeu2.jpg" style="width:50%">
+                </div>
+            </div>
+        <!-- Highlights of research and accomplishments-->
 
-          <li>
-            <a href="pages/academic.html"> Academic history </a>
-          </li>
+      </div>
+    </section>
 
-          <li>
-            <a href="pages/computers.html"> Programming and computation</a>
-          </li>
-        </ul>
-        <span class="credits left">Also check out my <a href="https://github.com/jbelyeu">GitHub</a> presence</span>
-      </section>
 
-    </div>
+
+
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/backgrounds/dna.jpg"></div>
+
+    <section id="skills"> 
+      <div class="container">
+            <div style="width: 100%; overflow: hidden;">
+                <div style="width: 60%; float: left;">
+                    <h3>About me</h3>
+                    <p>I'm a graduate student pursuing a PhD in the Molecular Biology Bioscience program at the University of Utah. I work on a variety of problems, mostly relating to genomic structural variation. </p>
+                </div>
+                <div style="margin-left: 62%;">
+                    <img src="images/belyeu2.jpg" style="width:50%">
+                </div>
+            </div>
+        <!-- Highlights of research and accomplishments-->
+
+      </div>
+    </section>
+
+
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/backgrounds/dna.jpg"></div>
+
+    <section id="interests"> 
+      <div class="container">
+        <h3>Pastimes</h3>
+        <p>I'm a huge fan of the outdoors and spend as much time as I can hiking, canyoneering, or skiing. Check out my Instagram for more:</p>
+
+
+        <div class="container">
+            <div id="instagram-feed" class="instagram_feed"></div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="./js/jquery.instagramFeed.min.js"></script>
+        <script>
+        (function($){
+                $(window).on('load', function(){
+                    $.instagramFeed({
+                        'username': 'jonbelyeu',
+                        'container': "#instagram-feed",
+                        'display_profile': true,
+                        'display_biography': true,
+                        'display_gallery': true,
+                        'get_raw_json': false,
+                        'callback': null,
+                        'styling': true,
+                        'items': 8,
+                        'items_per_row': 4,
+                        'margin': 1 
+                    });
+                });
+            })(jQuery);
+        </script>
+
+      </div>
+    </section>
+
+
+
 
   </body>
 </html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

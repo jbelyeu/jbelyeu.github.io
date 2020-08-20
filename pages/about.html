@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/github-dark.css">
     <link rel="icon" href="../images/favicon.ico" />
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="../js/respond.js"></script>
     <script src="../js/imagemanip.js"></script>
@@ -76,52 +75,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  $(".thumbnail").click(function(event){
-    var img = event.toElement;
-    var modal = document.getElementById(img.id + "Modal");
-    var modalImg = document.getElementById(img.id + "Img");
-    var captionText = document.getElementById(img.id +"Capt");
-
-
-    var source = this.src.replace("thumbs/", "");
-    source = source.replace("_tn", "");
-
-    //if window is not at least 800px
-    if (! window.matchMedia( "(min-width: 800px)" ).matches) {
-      console.log(source);
-      source = source.replace("hiking", "hiking/mobile");
-
-    }
-    modal.style.display = "block";
-    modalImg.src = source;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-  });
-
-  var closeFun = function(event) {
-    var span = event.toElement;
-    var spanID = span.id;
-    var modalID = spanID.substring(0, spanID.length - 5) + "Modal";
-    var modal = document.getElementById(modalID);
-    modal.style.display = "none";
-  };
-
-  var spans = document.getElementsByClassName("close");
-  for (var i = 0; i < spans.length; ++i) {
-    spans[i].onclick = closeFun;
-  }
-
-
-  $(document).keyup(function(event) {
-       if (event.keyCode == 27) {
-          var modals = document.getElementsByClassName("modal");
-          for (var i = 0; i < modals.length; ++i) {
-            if (modals[i].style.display == 'block') {
-              modals[i].style.display = "none";
-            }
-          }
-      }
-  });
-</script>
