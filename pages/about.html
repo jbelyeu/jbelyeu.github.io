@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/github-dark.css">
     <link rel="icon" href="../images/favicon.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="../js/respond.js"></script>
     <script src="../js/imagemanip.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -23,138 +24,54 @@
         </div>
 
         <h3>Home</h3>
-        <p>I'm from outside of a small town named Kellyton in central Alabama, although I generally claim the slightly less small town of Alexander City (even though it's just as unknown). I moved to Provo, Utah when I was 18 to start school and haven't spent much time in 'Bama since.</p>
+
+        <p>I'm from outside of a small town named <a href="https://goo.gl/maps/TRKYhZmZwrxouBPd8">Kellyton</a> in central Alabama, although I generally claim the slightly less small town of Alexander City (even though it's just as unknown). I moved to Provo, Utah when I was 18 to start school and haven't spent much time in 'Bama since.</p>
 
         <h3>Mission</h3>
-        <p>I served as a volunteer missionary for The Church of Jesus Christ of Latter-day Saints from December of 2010 to December of 2012. I spent two years in the beautiful country of Colombia, learned Spanish, and still never got a tan.</p>
-
-        <div class="academic-pics"></div>
-        <script type="text/javascript">
-          var imageLocation = "../images/"
-          var images = ["mission1.jpg", "mission2.jpg", "mission3.jpg"];
-
-          var imageLocation = "../images/mission/thumbs/";
-          var images = [
-            "mission1_tn.jpg",
-            "mission2_tn.jpg",
-            "mission3_tn.jpg",
-           ];
-          var captions = ["Cartagena, Colombia", "Barranquilla, Colombia", "A sloth I met in Cartagena"];
-
-          for (var i = 0; i < images.length; ++i) {
-            var imageRef = imageLocation + images[i];
-
-            var id = 'mission' + i;
-            $(".ending-mission").append('<img id="' + id + '" class="thumbnail" src="' + imageRef +'" alt="' + captions[i] + '" width="100">');
-            $(".ending-mission").append('<div id="'+ id + 'Modal" class="modal">');
-            $("#" + id + "Modal").append('<span class="close" id="'+ id + 'Close">×</span>');
-            $("#" + id + "Modal").append('<img class="modal-content" id="'+ id + 'Img">');
-            $("#" + id + "Modal").append('<div class="caption" id="'+ id + 'Capt"></div>');
-            $(".ending-mission").append('</div>');
-          }
-        </script>
+        <p>I served as a volunteer missionary for The Church of Jesus Christ of Latter-day Saints from December of 2010 to December of 2012. I spent two years in Colombia, learned Spanish.</p>
 
         <h3>Undergraduate Education</h3>
-        <p>From late 2009 to early 2016 (with a break for the mission) I studied at Brigham Young University in the emerging field of Bioinformatics. I graduated with a BS in Bioinformatics (minor in Computer Science) in April 2016.</p>
+        <p>I studied at Brigham Young University 2009-2016 (with a break for the mission). Graduated with a B.S. in Bioinformatics. I graduated with a BS in Bioinformatics (minor in Computer Science).</p>
 
         <h3>Graduate Education</h3>
-        <p>I'm a fourth-year grad student in the University of Utah Department of Human Genetics, working in <a href="../index.html">Aaron Quinlans's lab </a>.</p>
+        <p>I'm currently pursuing a doctorate in <a href="http://quinlanlab.org/">Aaron Quinlans's lab </a> at the University of Utah Department of Human Genetics, working in .</p>
 
         <h3>Pastimes</h3>
-        <p>I'm a huge fan of the outdoors. All of the background pictures on this site are from various hikes I took. Here are a few randomly selected images I liked. Refresh to see different ones.</p>
+        <p>I'm a huge fan of the outdoors and spend as much time as I can hiking, canyoneering, or skiing. Check out my Instagram for more:</p>
 
-        <div class="ending-pastimes"></div>
-        <script type="text/javascript">
-          var imageLocation = "../images/hiking/thumbs/";
-          var images = [
-            "GOPR0580.jpg",
-            "GOPR0587.jpg",
-            "GOPR0704.jpg",
-            "GOPR3068.jpg",
-            "GOPR3071.jpg",
-            "IMG_0545.HEIC",
-            "IMG_0551-EFFECTS.jpg",
-            "IMG_0619.jpg",
-            "IMG_0641.jpg",
-            "IMG_1578.jpg",
-            "IMG_1745.heic",
-            "IMG_1759.heic",
-            "IMG_20170506_134726166.jpg",
-            "IMG_20170508_144458_435.jpg",
-            "IMG_20170519_133250771_HDR.jpg",
-            "IMG_20170519_154005320_HDR.jpg",
-            "IMG_20170519_174323149.jpg",
-            "IMG_20170617_161700913_HDR.jpg",
-            "IMG_20170623_152723144_HDR.jpg",
-            "IMG_20170721_103644911_HDR.jpg",
-            "IMG_20170721_181926317_HDR.jpg",
-            "IMG_20170722_064745974_HDR.jpg",
-            "IMG_20170903_175221804_HDR.jpg",
-            "IMG_20170903_193150220_HDR.jpg",
-            "IMG_20170903_195510684_HDR.jpg",
-            "IMG_20170904_081613010_HDR.jpg",
-            "IMG_20190717_172446.jpg",
-            "IMG_20190810_131549.jpg",
-            "IMG_20190810_135620.jpg",
-            "IMG_20190810_135732.jpg",
-            "IMG_20190810_145243.jpg",
-            "IMG_20190810_152151.jpg",
-            "IMG_20190902_123818.jpg",
-            "ak_basin.jpg",
-            "double.jpg",
-            "landscape.jpg",
-            "ref.jpg",
-            "reflection.jpg",
-          ]
-//          var images = [
-//            "bg1_tn.jpg",
-//            "bg2_tn.jpg",
-//            "bg3_tn.jpg",
-//            "bg4_tn.jpg",
-//            "bg5_tn.jpg",
-//            "bg6_tn.jpg",
-//            "bg7_tn.jpg",
-//            "bg8_tn.jpg",
-//            "bg9_tn.jpg",
-//            "canyon1_tn.jpg",
-//            "canyon2_tn.jpg",
-//            "canyon3_tn.jpg",
-//            "timphike1_tn.jpg",
-//            "timphike2_tn.jpg",
-//            "timphike3_tn.jpg",
-//            "timphike4_tn.jpg",
-//            "timphike5_tn.jpg",
-//            "timpwalk_tn.jpg",
-//            "timpwalk2_tn.jpg",
-//            "timpwalk3_tn.jpg",
-//            "timpwalk4_tn.jpg",
-//            "hiking2_tn.jpg",
-//            "hiking1_tn.jpg"
-//          ];
 
-         //var captions = ["Melting snow runoff above Hellhole Lake in the Uintas", "Sunrise from Timpanogos", "I can't remember which this is, but there are some nice views in southern Utah", "An arch", "Some gorges", "An arch", "Desert" ,"Cold desert", "Just before sunrise", "Gorges", "Gorges","Creepy rocks overloocking gorges","View from Timpanogos Peak","View from Timpanogos Peak", "View from Timpanogos Peak", "More of the sunrise from Timp", "The moment of sunlight", "Walking around the base of Timp in early fall", "Walking around the base of Timp in early fall", "Walking around the base of Timp in early fall", "Walking around the base of Timp in early fall", "On the way up Timp", "Walls at Goblin VSalley"];
-          var length = images.length;
-          while (length > 5) {
-            var random = Math.floor(Math.random() * images.length);
-            images.splice(random,1);
-            //captions.splice(random,1);
-            length--;
-          }
-
-          for (var i = 0; i < images.length; ++i) {
-            var imageRef = imageLocation + images[i];
-            var id = 'pastime' + i;
-            $(".ending-pastimes").append('<img id="' + id + '" class="thumbnail" src="' + imageRef +'" >');
-            $(".ending-pastimes").append('<div id="'+ id + 'Modal" class="modal">');
-            $("#" + id + "Modal").append('<span class="close" id="'+ id + 'Close">×</span>');
-            $("#" + id + "Modal").append('<img class="modal-content" id="'+ id + 'Img">');
-            $("#" + id + "Modal").append('<div class="caption" id="'+ id + 'Capt"></div>');
-            $(".ending-pastimes").append('</div>');
-          }
+        <div class="container">
+            <div id="instagram-feed" class="instagram_feed"></div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="../js/jquery.instagramFeed.min.js"></script>
+        <script>
+        (function($){
+                $(window).on('load', function(){
+                    $.instagramFeed({
+                        'username': 'jonbelyeu',
+                        'container': "#instagram-feed",
+                        'display_profile': true,
+                        'display_biography': true,
+                        'display_gallery': true,
+                        'get_raw_json': false,
+                        'callback': null,
+                        'styling': true,
+                        'items': 8,
+                        'items_per_row': 4,
+                        'margin': 1 
+                    });
+                });
+            })(jQuery);
         </script>
-
-        <p>Contact me at <em>jrbelyeu@gmail.com</em></p>
-        <a href="../index.html"><< Back to home</a>
+        </div>
+        <div>
+            <p>Contact me:</p>
+            <p>
+                <a href="https://twitter.com/intent/tweet?screen_name=jon_belyeu&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @jon_belyeu</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
+        </div>
+        <a href="../index.html">Back to home</a>
       </section>
     </div>
   </body>
