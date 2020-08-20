@@ -15,5 +15,9 @@
 }
 
 .parallax-container {
-    max-height: 50vh;
+    max-height: 25vh;
 }
+.last-parallax {
+    max-height: 35vh;
+}
+
