@@ -871,56 +871,14 @@ section #title .credits.right {
 .body-background {
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
-}
-
-.home-page {
-    background-image: url(../images/backgrounds/bg5.jpg);
-}
-
-.about-page {
-   background-image: url(../images/backgrounds/bg4.jpg);
-
-}
-
-.compute-page {
-    background-image: url(../images/backgrounds/bg7.jpg);
-
-}
-
-.research-page {
-    background-image: url(../images/backgrounds/bg9.jpg);
-
-}
-
-.academic-page {
-    background-image: url(../images/backgrounds/bg3.jpg);
+    background-image: url(../images/backgrounds/dna.jpg);
 }
 
 @media only screen and (max-width: 700px){
-    .home-page {
-        background-image: url(../images/backgrounds/mobile/bg5.jpg);
-    }
-
-    .about-page {
-       background-image: url(../images/backgrounds/mobile/bg4.jpg);
-
-    }
-
-    .compute-page {
-        background-image: url(../images/backgrounds/mobile/bg7.jpg);
-
-    }
-
-    .research-page {
-        background-image: url(../images/backgrounds/mobile/bg9.jpg);
-
-    }
-
-    .academic-page {
-        background-image: url(../images/backgrounds/mobile/bg3.jpg);
+    .body-background {
+        background-image: url(../images/backgrounds/mobile/dna.jpg);
     }
 }
-
 @media only screen and (max-width: 600px){
   .academic-pics {
       left:5% !important;
