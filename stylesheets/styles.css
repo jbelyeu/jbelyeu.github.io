@@ -3,16 +3,11 @@
     {
         display: table;
         width: 100%;
-        table-layout: fixed;
         border-spacing: 20px;
     }
     .column
     {
         display: table-cell;
-    }
-
-    .column ul {
-      list-style-image: none;
     }
 }
 .column h4 {
