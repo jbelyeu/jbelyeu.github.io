@@ -27,3 +27,7 @@
     max-height: 40vh;
 }
 
+.btn-sm {
+  line-height: 9px;
+  vertical-align: top;
+}

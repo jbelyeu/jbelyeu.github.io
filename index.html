@@ -26,62 +26,57 @@
     <script src="./js/parallax.min.js"></script>
   </head>
   <body>
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/backgrounds/dna.jpg"></div>
+
     <section>
       <div class="container">
         <h1>Jon Belyeu <small>Bioinformatician</small></h1>
-        <a href="https://github.com/jbelyeu" class="btn btn-default btn-sm">GitHub @jbelyeu</a >
+        <a href="https://github.com/jbelyeu" class="btn btn-default btn-sm" style="color:white; background-color:black;border-color:black;" >GitHub @jbelyeu</a >
+        <a href="http://jonbelyeu.com/curriculum-vitae.pdf" class="btn btn-default btn-sm" target="_blank">Curriculum Vitae</a>
         <a href="https://twitter.com/intent/tweet?screen_name=jon_belyeu&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @jon_belyeu</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/backgrounds/dna.jpg"></div>
 
-    <section id="about-me"> 
+    <section id="about-me">
       <div class="container">
             <div style="width: 100%; overflow: hidden;">
                 <div style="width: 60%; float: left;">
                     <h3>About me</h3>
-                    <p>I'm a graduate student pursuing a PhD in the Molecular Biology Bioscience program at the University of Utah. I work on a variety of problems, mostly relating to genomic structural variation. </p>
+                    <p>I'm a graduate research student pursuing a PhD in the Molecular Biology Bioscience program at the University of Utah. My work mostly relates to genomic structural variation. </p>
                     <p>I earned my Bachelor's of Science Degree in Bioinformatics with a minor in Computer Science from Brigham Young University in 2016.</p>
 
                     <h3>Graduate Research</h3>
+                    <h4><em>De novo</em> structural variants in ASD</h4>
+                    <p>There is a known enrichment of structural variation in Autism Spectrum Disorders (ASD). I analyzed the rates and patterns of spontaneous structural variants in a very large ASD family cohort (<a href="https://www.biorxiv.org/content/10.1101/2020.10.06.329011v1.article-metrics">preprint on BioRxiv</a>) to learn more about how often these variants occur, what effects they have in ASD risk, the impact of parental age on structural variant risk, and the molecular mechanisms responsible. My work was featured in a <a href="https://www.spectrumnews.org/news/parental-age-plays-small-role-in-large-mutations-tied-to-autism/">Spectrum News article</a> after I presented my work as a poster at ASHG 2020.</p>
+
+                    <h4>Samplot</h4>
+                    <p>Visually reviewing the sequencing evidence for structural variants is very important, because lots of false positives variant calls occur. Samplot (<a href="https://www.biorxiv.org/content/10.1101/2020.09.23.310110v2">preprint on BioRxiv</a>) facilitates making plots, filtering, and even curating via a deep learning classifier.</p>
+
                     <h4>SV-plaudit</h4>
                     <p>I developed a tool (<a href="https://academic.oup.com/gigascience/article/7/7/giy064/5026174">published in GigaScience</a>) for creating image views of genomic intervals, automatically storing them in the cloud, deploying a website to view/score them, and retrieving scores for analysis, with support for sequencing data from BAM or CRAM files from Illumina, or long-read technologies (ONT/PacBio).</p>
-                    
+
                     <h3>Undergraduate research </h3>
                     <h4>Codon Bias</h4>
                     <p>I worked with Justin Miller, under the supervision of Dr. Ridge, in a project targeted toward understanding evolutionary implications of non-random codon bias, leading to publication of <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cla.12183">Missing something? Codon aversion as a new character system in phylogenetics</a> in Cladistics (2017).</span>
 
-                    <h4>Seismic Event Detector</h4> 
+                    <h4>Seismic Event Detector</h4>
                     <p>In a project for a BYU CS Capstone in Big Data, my team (Artem Golotin, Darian Ramage, and I) developed a scalable system for monitoring streaming seismic signals in a developing aftershock sequence. This could be used to study earthquakes in more detail (as well as to identify illicit nuclear testing). Presented at LLNL and BYU.</p>
-                    
-                </div>
-                <div>
-                    <a href="http://jonbelyeu.com/curriculum-vitae.pdf">
-                      <img src="images/belyeu2.jpg" style="padding-top:5%">
-                      <figcaption >Click to view/download CV</figcaption>
-                    </a>
 
                 </div>
+                <div>
+                  <img src="images/belyeu2.jpg" style="padding-top:5%">
+                  <figcaption >Contact: jrbelyeu@gmail.com</figcaption>
+                </div>
             </div>
-        <!-- Highlights of research and accomplishments-->
 
       </div>
     </section>
 
-
-    <section id="research-details"> 
-      <div class="container">
-
-              </div>
-    </section>
-
-
-
     <div class="parallax-container" data-parallax="scroll" position="bottom" data-image-src="images/dna-computation.jpg"></div>
 
-    <section id="skills"> 
+    <section id="skills">
       <div class="container">
         <h3>Skills</h3>
 
@@ -101,7 +96,7 @@
               <li>Matplotlib</li>
               <li>ggplot2</li>
               <li>Git</li>
-            </ul>       
+            </ul>
           </div>
 
 
@@ -125,7 +120,7 @@
 
     <div class="parallax-container last-parallax" data-parallax="scroll" data-position="top" data-image-src="images/interests.jpg"></div>
 
-    <section id="interests"> 
+    <section id="interests">
         <div class="container">
             <h3>Pastimes</h3>
             <p>I'm a huge fan of the outdoors and spend as much time as I can hiking, canyoneering, or skiing. Check out my Instagram for more:</p>
@@ -146,7 +141,7 @@
                         'styling': true,
                         'items': 8,
                         'items_per_row': 4,
-                        'margin': 1 
+                        'margin': 1
                     });
                 });
             })(jQuery);
@@ -159,5 +154,3 @@
 
   </body>
 </html>
- 
-
