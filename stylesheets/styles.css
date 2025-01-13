@@ -635,11 +635,43 @@ a:hover {
 @media (max-width: 768px) {
   .activities-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 3rem;  /* Increased gap between cards */
+    padding: 1rem;
+    margin: 2rem 0;  /* Add vertical margin */
   }
-  
+
+  .activity-card {
+    margin-bottom: 0;  /* Remove margin since we're using grid gap */
+    height: 350px;  /* Slightly reduced height */
+    position: relative;
+    overflow: visible;
+  }
+
   .activity-image {
-    height: 300px;
+    height: 100%;  /* Fill the card height */
+    position: relative;
+  }
+
+  /* Ensure last card doesn't have extra space */
+  .activity-card:last-child {
+    margin-bottom: 2rem;  /* Add some space at the bottom */
+  }
+
+  /* Adjust container padding */
+  .interests-section .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+  .activities-grid {
+    gap: 2.5rem;  /* Slightly reduced gap for very small screens */
+    padding: 0.5rem;
+  }
+
+  .activity-card {
+    height: 300px;  /* Even smaller height for very small screens */
   }
 }
 
