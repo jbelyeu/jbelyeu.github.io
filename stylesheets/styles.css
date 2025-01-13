@@ -648,31 +648,34 @@ a:hover {
 
 @media (max-width: 768px) {
   .activities-grid {
-    display: flex;  /* Change to flexbox for better control */
+    display: flex;
     flex-direction: column;
-    gap: 0;  /* Remove gap since we'll use margins */
+    gap: 4rem;  /* Increased gap between cards */
     padding: 2rem 1rem;
   }
 
   .activity-card {
-    flex-shrink: 0;  /* Prevent shrinking */
-    height: 400px;  /* Fixed height */
-    margin-bottom: 3rem;  /* Explicit spacing between cards */
+    flex-shrink: 0;
+    height: 400px;
     position: relative;
     overflow: visible;
+    margin: 0;  /* Remove margin since we're using gap */
   }
 
   .activity-image {
     width: 100%;
     height: 100%;
     position: relative;
+    z-index: 1;  /* Ensure proper stacking */
   }
 
   .image-grid {
     height: 100%;
+    position: relative;
+    z-index: 1;
   }
 
-  /* Remove margin from last card */
+  /* Remove margin from last card since we're using gap */
   .activity-card:last-child {
     margin-bottom: 0;
   }
@@ -681,12 +684,12 @@ a:hover {
 /* Additional adjustments for very small screens */
 @media (max-width: 480px) {
   .activities-grid {
+    gap: 3rem;  /* Slightly smaller gap for very small screens */
     padding: 1rem 0.5rem;
   }
 
   .activity-card {
-    height: 350px;  /* Slightly smaller on very small screens */
-    margin-bottom: 2.5rem;  /* Slightly less spacing */
+    height: 350px;
   }
 }
 
