@@ -21,7 +21,12 @@
 }
 
 .parallax-container {
-    max-height: 25vh;
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 .last-parallax {
     max-height: 40vh;
@@ -253,6 +258,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 /* General Typography */
@@ -854,5 +860,26 @@ a:hover {
   .activity-card,
   .research-card {
     transform: none !important;  /* Disable hover transforms on touch devices */
+  }
+}
+
+/* Specific hero section parallax adjustments */
+.hero-section.parallax-container {
+  min-height: 55vh !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: scroll;  /* Change to scroll on mobile */
+}
+
+@media (max-width: 768px) {
+  .hero-section.parallax-container {
+    min-height: 100vh !important;
+    background-attachment: scroll;
+    background-position: center top !important;
+  }
+
+  /* Disable parallax effect on mobile for better performance */
+  .parallax-container {
+    background-attachment: scroll;
   }
 }
