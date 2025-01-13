@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Jon Belyeu - Computational Geneticist at Pacific Biosciences">
-    <title>Jon Belyeu</title>
+    <title>Jon Belyeu1</title>
     
     <!-- Stylesheets -->
     <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -283,6 +283,35 @@
         pdfViewer.src = '';
       }
     }
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.matchMedia('(hover: none)').matches) {
+          const images = document.querySelectorAll('.image-grid img');
+          
+          images.forEach(img => {
+            img.addEventListener('click', function() {
+              // Remove expanded class from all other images
+              images.forEach(otherImg => {
+                if (otherImg !== img) {
+                  otherImg.classList.remove('expanded');
+                }
+              });
+              
+              // Toggle expanded class on clicked image
+              img.classList.toggle('expanded');
+            });
+          });
+
+          // Close expanded image when clicking outside
+          document.addEventListener('click', function(e) {
+            if (!e.target.closest('.image-grid')) {
+              images.forEach(img => img.classList.remove('expanded'));
+            }
+          });
+        }
+      });
     </script>
 
   </body>
