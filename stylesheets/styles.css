@@ -291,6 +291,8 @@ a:hover {
   display: flex;
   align-items: center;
   color: white;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .hero-content {
@@ -317,6 +319,10 @@ a:hover {
 
 .hero-image {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero-image .profile-image {
@@ -386,7 +392,8 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 70vh !important;
+    min-height: 100vh !important;
+    padding: 2rem 0;
   }
 
   .hero-content h1 {
@@ -398,12 +405,15 @@ a:hover {
   }
 
   .hero-image {
-    margin-top: 2rem;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 300px;
   }
 
   .hero-image .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 0;
   }
 
   .hero-content .social-link {
@@ -766,12 +776,22 @@ a:hover {
 
   /* Activities grid adjustments */
   .activities-grid {
-    padding: 2rem 1rem;  /* Reduced padding */
-    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 
   .activity-card {
-    aspect-ratio: 3/4;  /* Taller cards on mobile */
+    margin-bottom: 2rem;
+    height: 400px;
+    aspect-ratio: auto;
+  }
+
+  .activity-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 
   .activity-overlay {
