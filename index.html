@@ -37,7 +37,7 @@
         <div class="container"2
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-              <h1>Jon Belyeu1 <span class="title">Computational Geneticist</span></h1>
+              <h1>Jon Belyeu2 <span class="title">Computational Geneticist</span></h1>
               <div class="social-links">
                 <a href="https://bsky.app/profile/jonbelyeu.bsky.social" class="social-link" target="_blank" rel="noopener">
                   <img src="images/bluesky.png" alt="Bluesky" class="social-icon">
@@ -296,29 +296,22 @@
         if (window.matchMedia('(hover: none)').matches) {
           const images = document.querySelectorAll('.image-grid img');
           
-          // Handle clicks on images
           images.forEach(img => {
             img.addEventListener('click', function(e) {
-              e.stopPropagation();
-              
+              // If this image is expanded, close it
               if (this.classList.contains('expanded')) {
-                // If clicking an expanded image, close it
                 this.classList.remove('expanded');
-              } else {
-                // Close any other expanded images first
-                images.forEach(otherImg => otherImg.classList.remove('expanded'));
-                // Then expand this one
-                this.classList.add('expanded');
+                return;
               }
+              
+              // Close any other expanded images
+              images.forEach(otherImg => {
+                otherImg.classList.remove('expanded');
+              });
+              
+              // Expand this image
+              this.classList.add('expanded');
             });
-          });
-
-          // Handle clicks on the document to close expanded images
-          document.addEventListener('click', function(e) {
-            // Only handle clicks that aren't on images
-            if (!e.target.closest('.image-grid img')) {
-              images.forEach(img => img.classList.remove('expanded'));
-            }
           });
         }
       });

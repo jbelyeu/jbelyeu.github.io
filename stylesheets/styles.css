@@ -782,18 +782,9 @@ a:hover {
   }
 
   .image-grid img.expanded {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 90vw;
-    height: auto;
-    max-height: 80vh;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    object-fit: contain;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 10px;
-    border-radius: 8px;
+    transform: scale(2.0);
+    z-index: 100;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   }
 
   .image-grid img.expanded::before {
@@ -803,8 +794,8 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
   }
 }
 
