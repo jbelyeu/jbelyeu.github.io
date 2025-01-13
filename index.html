@@ -37,7 +37,7 @@
         <div class="container"2
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-              <h1>Jon Belyeu5 <span class="title">Computational Geneticist</span></h1>
+              <h1>Jon Belyeu <span class="title">Computational Geneticist</span></h1>
               <div class="social-links">
                 <a href="https://bsky.app/profile/jonbelyeu.bsky.social" class="social-link" target="_blank" rel="noopener">
                   <img src="images/bluesky.png" alt="Bluesky" class="social-icon">
@@ -297,24 +297,30 @@
           const images = document.querySelectorAll('.image-grid img');
           
           images.forEach(img => {
-            img.addEventListener('click', function() {
+            img.addEventListener('click', function(e) {
+              // If this image is already expanded, close it
+              if (this.classList.contains('expanded')) {
+                this.classList.remove('expanded');
+                e.stopPropagation();
+                return;
+              }
+              
               // Remove expanded class from all other images
               images.forEach(otherImg => {
-                if (otherImg !== img) {
-                  otherImg.classList.remove('expanded');
-                }
+                otherImg.classList.remove('expanded');
               });
               
-              // Toggle expanded class on clicked image
-              img.classList.toggle('expanded');
+              // Add expanded class to clicked image
+              this.classList.add('expanded');
+              e.stopPropagation();
             });
           });
 
           // Close expanded image when clicking outside
-          document.addEventListener('click', function(e) {
-            if (!e.target.closest('.image-grid')) {
-              images.forEach(img => img.classList.remove('expanded'));
-            }
+          document.addEventListener('click', function() {
+            images.forEach(img => {
+              img.classList.remove('expanded');
+            });
           });
         }
       });
