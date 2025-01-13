@@ -722,35 +722,72 @@ a:hover {
   border-radius: 4px;
 }
 
-/* Hover behavior using ::after pseudo-element */
-.image-grid img:hover::after {
-  content: '';
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  max-height: 80%;
-  max-width: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  background-image: inherit;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+/* Base hover behavior for desktop */
+@media (hover: hover) {
+  .image-grid img:hover::after {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-height: 80%;
+    max-width: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-image: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-grid img:hover::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
 }
 
-/* Add a semi-transparent overlay when image is expanded */
-.image-grid img:hover::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 99;
+/* Click behavior for mobile */
+@media (hover: none) {
+  .image-grid img {
+    cursor: pointer;
+  }
+
+  .image-grid img.expanded::after {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-height: 80%;
+    max-width: 90%;  /* Wider on mobile */
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-image: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-grid img.expanded::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
 }
 
 /* Container settings */
