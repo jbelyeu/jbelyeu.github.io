@@ -212,14 +212,8 @@
   padding: 0.75rem 1rem;
   border-radius: 4px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
 }
 
-.skill-item:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
 
 /* Interests Section */
 .interests-section {
@@ -454,7 +448,7 @@ a:hover {
   min-height: 80vh !important;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin: 0;
   background: transparent;
 }
@@ -466,10 +460,16 @@ a:hover {
   align-items: center;
   background: rgba(0, 0, 0, 0.35);
   color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .overlay-content .container {
-  padding: 0 15px;  /* Keep standard padding */
+  padding: 2rem 15px;  /* Increased padding */
+  width: 100%;
 }
 
 .skills-parallax h3,
@@ -481,17 +481,24 @@ a:hover {
   background: rgba(255, 255, 255, 0.12);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .skill-item:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+  transform: none;
 }
 
 /* Update mobile responsiveness */
 @media (max-width: 768px) {
   .skills-parallax {
     min-height: 100vh !important;
+  }
+
+  .overlay-content {
+    height: 100%;
   }
 }
 
@@ -914,5 +921,12 @@ a:hover {
   /* Disable parallax effect on mobile for better performance */
   .parallax-container {
     background-attachment: scroll;
+  }
+}
+
+/* Remove any mobile-specific hover effects */
+@media (hover: none) {
+  .skill-item {
+    transform: none !important;
   }
 }
