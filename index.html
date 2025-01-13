@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jon Belyeu - Computational Geneticist at Pacific Biosciences">
     <title>Jon Belyeu</title>
+    
+    <!-- Stylesheets -->
     <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="./stylesheets/styles.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/92db5ad319.js" crossorigin="anonymous"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/respond.js"></script>
@@ -27,138 +32,258 @@
     <script src="./js/parallax.min.js"></script>
   </head>
   <body>
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-image-src="./images/dna.jpg"></div>
-
-    <section>
-      <div class="container">
-        <h1>Jon Belyeu <small>Computational Geneticist</small></h1>
-        <a href="https://twitter.com/jon_belyeu" class=" btn-default btn-sm" target="_blank" > <i class="fab fa-twitter" style="color:cornflowerblue;font-size:18px;" ></i> jbelyeu</a >
-        <a href="https://www.instagram.com/jonbelyeu/" class=" btn-default btn-sm" target="_blank" > <i class="fab fa-instagram" style="color:#c13584;font-size:18px;" ></i> jbelyeu</a >
-        <a href="https://linkedin.com/in/jon-belyeu" class=" btn-default btn-sm" target="_blank" > <i class="fab fa-linkedin" style="font-size:18px;" ></i> jon-belyeu</a >
-        <a href="https://github.com/jbelyeu" class="btn-default btn-sm" target="_blank" > <i class="fab fa-github" style="font-size:18px;"></i> jbelyeu</a >
-        <a href="http://jonbelyeu.com/curriculum-vitae.pdf" class=" btn-default btn-sm" target="_blank" >Curriculum Vitae</a>
-      </div>
-    </section>
-
-
-    <section id="about-me">
-      <div class="container">
-            <div style="width: 100%; overflow: hidden;">
-                <div style="width: 60%; float: left;">
-                    <h3>About me</h3>
-                    <p>I'm a Senior Bioinformatics Scientist at Pacific Biosciences (PacBio). My work focuses on structural genome variation and improving the quality of PacBio HiFi read data.
-                      
-                    <h3>Illumina Bioinformatics Research</h3>
-                    <h4>Complex medically relevant variant calling<em></em> </h4>
-                    <p>From June 2021 - May 2023 I worked at Illumina as a Bioinformatics Scientist. My work at Illumina dealt with repetitive regions of the genome, such as targeted variant calling for the cardiovascular-disease related LPA gene (see this <a href="https://www.illumina.com/science/genomics-research/articles/using-whole-genome-sequencing-to-evaluate-copy-number-variants-o.html" target="_blank">white paper</a> for details). </p>
-                    <p>I also worked on a manuscript, which currently resides on <a href="https://www.biorxiv.org/content/10.1101/2023.04.24.538128v1" target="_blank">BioRxiv</a> but is in the process of submissions and peer review for journal publication.</p>
-                      
-
-                    <h3>Graduate Research</h3>
-                    <h4><em>De novo</em> structural variants in ASD</h4>
-                    <p>I analyzed the rates and patterns of spontaneous SVs in a very large Autism Spectrum Disorder family cohort as well as a cohort of large, multigenerational Utah families (<a href="https://www.cell.com/ajhg/fulltext/S0002-9297(21)00054-9" target="_blank">published in AJHG</a>) to learn more about how often these variants occur, what effects they have in ASD risk, the impact of parental age on SV risk, and the molecular mechanisms responsible. My work was featured in a <a href="https://www.spectrumnews.org/news/parental-age-plays-small-role-in-large-mutations-tied-to-autism/" target="_blank">Spectrum News article</a> after I presented a poster at ASHG 2020.</p>
-
-                    <h4>Samplot</h4>
-                    <p>Visually reviewing the sequencing evidence for SVs is very important, because lots of false positives variant calls occur. Samplot (<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02380-5" target="_blank">published in Genome Biology</a>) facilitates making plots, filtering, and even curating via a deep learning classifier.</p>
-
-                    <h4>SV-plaudit</h4>
-                    <p>I developed a tool (<a href="https://academic.oup.com/gigascience/article/7/7/giy064/5026174" target="_blank">published in GigaScience</a>) for creating image views of genomic intervals, automatically storing them in the cloud, deploying a website to view/score them, and retrieving scores for analysis, with support for sequencing data from BAM or CRAM files from Illumina, or long-read technologies (ONT/PacBio).</p>
-
-                    <h3>Undergraduate research </h3>
-                    <h4>Codon Bias</h4>
-                    <p>I worked with Justin Miller, under the supervision of Dr. Ridge, in a project targeted toward understanding evolutionary implications of non-random codon bias, leading to publication of <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cla.12183" target="_blank">Missing something? Codon aversion as a new character system in phylogenetics</a> in Cladistics (2017).</span>
-
-                    <h4>Seismic Event Detector</h4>
-                    <p>In a project for a BYU CS Capstone in Big Data, my team (Artem Golotin, Darian Ramage, and I) developed a scalable system for monitoring streaming seismic signals in a developing aftershock sequence. This could be used to study earthquakes in more detail (as well as to identify illicit nuclear testing). Presented at LLNL and BYU.</p>
-
-                </div>
-                <div>
-                  <img src="images/headshot.jpg" style="padding-top:5%;width:35%">
-                  <figcaption ><i class="far fa-envelope" style="font-size:15px;"></i> jrbelyeu@gmail.com</figcaption>
-                </div>
+    <div class="parallax-container hero-section" data-parallax="scroll" data-position="top" data-image-src="./images/dna.jpg">
+      <div class="hero-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h1>Jon Belyeu <span class="title">Computational Geneticist</span></h1>
+              <div class="social-links">
+                <a href="https://bsky.app/profile/jonbelyeu.bsky.social" class="social-link" target="_blank" rel="noopener">
+                  <img src="images/bluesky.png" alt="Bluesky" class="social-icon">
+                </a>
+                <a href="https://twitter.com/jon_belyeu" class="social-link" target="_blank" rel="noopener">
+                  <i class="fab fa-twitter" style="color:cornflowerblue"></i>
+                </a>
+                <a href="https://www.instagram.com/jonbelyeu/" class="social-link" target="_blank" rel="noopener">
+                  <i class="fab fa-instagram" style="color:#c13584"></i>
+                </a>
+                <a href="https://linkedin.com/in/jon-belyeu" class="social-link" target="_blank" rel="noopener">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/jbelyeu" class="social-link" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
-
-      </div>
-    </section>
-
-    <div class="parallax-container" data-parallax="scroll" position="bottom" data-image-src="images/dna-computation.jpg"></div>
-
-    <section id="skills">
-      <div class="container">
-        <h3>Skills</h3>
-
-        <div class="row">
-
-          <div class="column">
-            <h4>Bioinformatics tools</h4>
-            <ul>
-              <li>Linux/Unix</li>
-              <li>Algorithm development</li>
-              <li>Computational tool development/distribution</li>
-              <li>Parallel processing</li>
-              <li>Supercomputing</li>
-              <li>AWS</li>
-              <li>Conda</li>
-              <li>Nextflow</li>
-              <li>Matplotlib</li>
-              <li>ggplot2</li>
-              <li>Git</li>
-            </ul>
-          </div>
-
-
-          <div class="column">
-            <h4>Programming Languages</h4>
-              <ul>
-                <li>Python</li>
-                <li>Bash/Shell</li>
-                <li>R</li>
-                <li>C/C++ (some)</li>
-              </ul>
+            <div class="col-md-4">
+              <div class="hero-image">
+                <img src="images/headshot.jpg" alt="Jon Belyeu" class="profile-image">
+                <a href="javascript:void(0)" onclick="openPdfModal('curriculum-vitae.pdf')" class="cv-link">
+                  Curriculum Vitae
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
+    <section id="about-me" class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>About me</h3>
+            <p class="lead">I'm a Senior Bioinformatics Scientist at Pacific Biosciences (PacBio). My work focuses on structural genome variation and improving the quality of PacBio HiFi read data.</p>
+            
+            <div class="research-section">
+              <div class="research-card">
+                <h3>PacBio</h3>
+                <h4>Complex structural variant visualization</h4>
+                <p>I am the developer for SVTopo, a HiFi-based tool for visualizing complex structural variants. The tool determines connections between SV breakends and creates high-quality visualizations showing the order and orientation of rearranged genomic segments. This work was presented at ASHG 2024 and the tool is publicly available.</p>
+                <div class="publication-links">
+                  <a href="https://github.com/PacificBiosciences/HiFi-SVTopo" class="publication-link" target="_blank">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                  </a>
+                </div>
+              </div>
 
+              <div class="research-card">
+                <h3>Illumina Bioinformatics Research</h3>
+                <h4>Complex medically relevant variant calling</h4>
+                <p>From June 2021 - May 2023 I worked at Illumina as a Bioinformatics Scientist. My work at Illumina dealt with repetitive regions of the genome, such as targeted variant calling for the cardiovascular-disease related LPA gene.</p>
+                <a href="https://www.illumina.com/science/genomics-research/articles/using-whole-genome-sequencing-to-evaluate-copy-number-variants-o.html" class="publication-link" target="_blank">
+                  Read the white paper <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+                <p>I also worked on a manuscript, which currently resides on <a href="https://www.biorxiv.org/content/10.1101/2023.04.24.538128v1" target="_blank">BioRxiv</a> but is in the process of submissions and peer review for journal publication.</p>
+              </div>
+
+              <div class="research-card">
+                <h3>Graduate Research</h3>
+                <h4><em>De novo</em> structural variants in ASD</h4>
+                <p>I analyzed the rates and patterns of spontaneous SVs in a very large Autism Spectrum Disorder family cohort as well as a cohort of large, multigenerational Utah families to learn more about how often these variants occur, what effects they have in ASD risk, the impact of parental age on SV risk, and the molecular mechanisms responsible.</p>
+                <div class="publication-links">
+                  <a href="https://www.cell.com/ajhg/fulltext/S0002-9297(21)00054-9" class="publication-link" target="_blank">Published in AJHG</a>
+                  <a href="https://www.spectrumnews.org/news/parental-age-plays-small-role-in-large-mutations-tied-to-autism/" class="publication-link" target="_blank">Featured in Spectrum News</a>
+                </div>
+              </div>
+
+              <div class="research-card">
+                <h4>Samplot</h4>
+                <p>Visually reviewing the sequencing evidence for SVs is very important, because lots of false positives variant calls occur. Samplot facilitates making plots, filtering, and even curating via a deep learning classifier.</p>
+                <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02380-5" class="publication-link" target="_blank">Published in Genome Biology</a>
+              </div>
+
+              <div class="research-card">
+                <h4>SV-plaudit</h4>
+                <p>I developed a tool for creating image views of genomic intervals, automatically storing them in the cloud, deploying a website to view/score them, and retrieving scores for analysis, with support for sequencing data from BAM or CRAM files from Illumina, or long-read technologies (ONT/PacBio).</p>
+                <a href="https://academic.oup.com/gigascience/article/7/7/giy064/5026174" class="publication-link" target="_blank">Published in GigaScience</a>
+              </div>
+
+              <div class="research-card">
+                <h3>Undergraduate research</h3>
+                <h4>Codon Bias</h4>
+                <p>I worked with Justin Miller, under the supervision of Dr. Ridge, in a project targeted toward understanding evolutionary implications of non-random codon bias.</p>
+                <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cla.12183" class="publication-link" target="_blank">Published in Cladistics</a>
+
+                <h4>Seismic Event Detector</h4>
+                <p>In a project for a BYU CS Capstone in Big Data, my team (Artem Golotin, Darian Ramage, and I) developed a scalable system for monitoring streaming seismic signals in a developing aftershock sequence. This could be used to study earthquakes in more detail (as well as to identify illicit nuclear testing). Presented at LLNL and BYU.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-
-    <div class="parallax-container last-parallax" data-parallax="scroll" data-position="top" data-image-src="images/interests.jpg"></div>
-
-    <section id="interests">
+    <div class="parallax-container skills-parallax" data-parallax="scroll" data-position="center" data-image-src="images/interests.jpg">
+      <div class="overlay-content">
         <div class="container">
-            <h3>Pastimes</h3>
-            <p>I'm a huge fan of the outdoors and spend as much time as I can hiking, canyoneering, or skiing. Check out my Instagram for more.</p>
-            <div id="instagram-feed" class="instagram_feed"></div>
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-        <script src="./js/jquery.instagramFeed.min.js"></script>
-        <script>
-        (function($){
-                $(window).on('load', function(){
-                    $.instagramFeed({
-                        'username': 'jonbelyeu',
-                        'container': "#instagram-feed",
-                        'display_profile': true,
-                        'display_biography': true,
-                        'display_gallery': true,
-                        'get_raw_json': false,
-                        'callback': null,
-                        'styling': true,
-                        'items': 8,
-                        'items_per_row': 4,
-                        'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/',
-                        'margin': 1
-                    });
-                });
-            })(jQuery);
-        </script>
-
+          <h3>Skills</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skill-category">
+                <h4>Bioinformatics Tools</h4>
+                <div class="skill-grid">
+                  <span class="skill-item">Linux/Unix</span>
+                  <span class="skill-item">Algorithm Development</span>
+                  <span class="skill-item">Computational Tools</span>
+                  <span class="skill-item">Parallel Processing</span>
+                  <span class="skill-item">Supercomputing</span>
+                  <span class="skill-item">AWS</span>
+                  <span class="skill-item">Conda</span>
+                  <span class="skill-item">Nextflow</span>
+                  <span class="skill-item">Matplotlib</span>
+                  <span class="skill-item">ggplot2</span>
+                  <span class="skill-item">Git</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <div class="skill-grid">
+                  <span class="skill-item">Python</span>
+                  <span class="skill-item">Bash/Shell</span>
+                  <span class="skill-item">R</span>
+                  <span class="skill-item">C/C++</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <section id="interests" class="interests-section">
+      <div class="container">
+        <h3>Adventures</h3>
+        <p class="lead">I'm passionate about outdoor adventures in all seasons.</p>
+        
+        <div class="activities-grid">
+          <div class="activity-card">
+            <div class="activity-image">
+              <div class="image-grid hiking-grid">
+                <img src="images/hiking1.jpg" alt="Hiking in the mountains">
+                <img src="images/hiking2.jpg" alt="Mountain vista">
+                <img src="images/hiking3.jpg" alt="Alpine lake">
+                <img src="images/hiking4.jpg" alt="Summit view">
+                <img src="images/hiking5.jpg" alt="Mountain trail">
+                <img src="images/hiking6.jpg" alt="Mountain peak">
+              </div>
+              <div class="activity-overlay">
+                <h4>Hiking</h4>
+                <p>Exploring trails all over the West.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-image">
+              <div class="image-grid">
+                <img src="images/canyoneering1.jpg" alt="Canyoneering rappel">
+                <img src="images/canyoneering2.jpg" alt="Slot canyon">
+                <img src="images/canyoneering3.png" alt="Desert canyon">
+                <img src="images/canyoneering4.png" alt="Canyon adventure">
+              </div>
+              <div class="activity-overlay">
+                <h4>Canyoneering</h4>
+                <p>Rappelling through the stunning slot canyons of southern Utah (and elsewhere).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-image">
+              <div class="image-grid skiing-grid">
+                <img src="images/skiing2_pano.jpg" alt="Powder skiing" class="ski-pano">
+                <img src="images/skiing1.jpg" alt="Backcountry skiing">
+                <img src="images/skiing3.jpg" alt="Mountain skiing">
+              </div>
+              <div class="activity-overlay">
+                <h4>Skiing</h4>
+                <p>Falling down in the greatest snow on earth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function(){
+        try {
+          $.instagramFeed({
+            'username': 'jonbelyeu',
+            'container': "#instagram-feed",
+            'display_profile': true,
+            'display_biography': true,
+            'display_gallery': true,
+            'items': 8,
+            'items_per_row': 4,
+            'margin': 1
+          });
+        } catch (e) {
+          console.log('Error loading Instagram feed:', e);
+          $('#instagram-feed').html('<p>Instagram feed temporarily unavailable. Please visit <a href="https://www.instagram.com/jonbelyeu/" target="_blank">my Instagram profile</a> directly.</p>');
+        }
+      });
+    </script>
+
     <div class="parallax-container last-parallax" data-parallax="scroll" data-position="top" data-image-src="images/interests2.jpg"></div>
     </section>
 
+    <div id="pdf-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <iframe id="pdf-viewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
 
+    <script>
+    const modal = document.getElementById('pdf-modal');
+    const closeBtn = document.getElementsByClassName('close-modal')[0];
+    const pdfViewer = document.getElementById('pdf-viewer');
+
+    function openPdfModal(pdfUrl) {
+      pdfViewer.src = pdfUrl;
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';  // Prevent scrolling when modal is open
+    }
+
+    closeBtn.onclick = function() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';  // Restore scrolling
+      pdfViewer.src = '';  // Clear the iframe source
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        pdfViewer.src = '';
+      }
+    }
+    </script>
 
   </body>
 </html>
