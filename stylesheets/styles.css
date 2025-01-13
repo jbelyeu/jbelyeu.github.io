@@ -651,28 +651,27 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    position: relative;
   }
 
   .activity-card {
+    background: white;
+    padding-bottom: 120px;  /* Space for the next card */
     position: relative;
     height: 400px;
-    margin-bottom: 100px;  /* Fixed margin to prevent overlap */
-    transform: translateZ(0);  /* Create new stacking context */
-    -webkit-transform: translateZ(0);  /* For Safari */
   }
 
   .activity-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    position: relative;
-    transform: translateZ(0);  /* Create new stacking context */
-    -webkit-transform: translateZ(0);  /* For Safari */
+    height: 400px;
+    background: white;
   }
 
   .image-grid {
     height: 100%;
-    position: relative;
+    width: 100%;
   }
 
   .activity-overlay {
@@ -680,8 +679,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateZ(0);  /* Create new stacking context */
-    -webkit-transform: translateZ(0);  /* For Safari */
     background: linear-gradient(to top, 
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.7) 40%,
@@ -690,12 +687,7 @@ a:hover {
   }
 
   .activity-card:last-child {
-    margin-bottom: 0;
-  }
-
-  .activity-image img:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
+    padding-bottom: 0;
   }
 }
 
@@ -706,11 +698,15 @@ a:hover {
 
   .activity-card {
     height: 350px;
-    margin-bottom: 80px;  /* Slightly smaller margin for very small screens */
+    padding-bottom: 100px;
+  }
+
+  .activity-image {
+    height: 350px;
   }
 
   .activity-card:last-child {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
