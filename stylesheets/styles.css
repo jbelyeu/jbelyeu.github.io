@@ -781,22 +781,19 @@ a:hover {
     cursor: pointer;
   }
 
-  .image-grid img.expanded::after {
-    content: '';
+  .image-grid img.expanded {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: auto;
+    width: 90vw;
     height: auto;
-    max-height: 80%;
-    max-width: 90%;  /* Wider on mobile */
+    max-height: 80vh;
     transform: translate(-50%, -50%);
-    z-index: 100;
-    background-image: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 8px;
   }
 
   .image-grid img.expanded::before {
@@ -806,8 +803,8 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 99;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
   }
 }
 
